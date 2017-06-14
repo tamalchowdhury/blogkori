@@ -1,2 +1,2 @@
-# blogkori-theme
+# BlogKori Theme
 A minimalist WordPress Theme
