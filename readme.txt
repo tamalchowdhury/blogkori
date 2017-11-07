@@ -1,5 +1,5 @@
 BlogKori Theme README file
-Version 1.3.4 Last updated on Aug 21, 2017
+Version 1.3.5 Last updated on Nov 7, 2017
 
 #######################
 # * Developers Note * #
@@ -20,7 +20,7 @@ and use it on your site, please send me an email with your site
 address and I will be happy to check it out.
 
 Read my blog at https://blogkori.com 
-email: tamalanwaronline[at]gmail[dot]com ~ tweet me @tamalweb 
+email: tamalanwaronline[at]gmail[dot]com ~ tweet me @tamalanwar
 
 #######################
 # ** Theme License ** #
@@ -83,7 +83,7 @@ please add just one level of drop down, thanks.
 #######################
 
 # Limited support available via WordPress theme support page; 
-Twitter @tamalweb or from my facebook page: fb.com/blogkori
+Twitter @tamalanwar or from my facebook page: fb.com/blogkori
 
 #######################
 # *** Change Log *** #
