@@ -7,7 +7,7 @@
 						<h2 id="post-<?php the_ID(); ?>" class="post-title">
 							<a href="<?php the_permalink(); ?>" title="<?php _e( 'Permanent link to', 'blogkori' );?> <?php the_title(); ?>"><?php the_title(); ?></a>
 						</h2>
-						<p class="post-meta"><em><?php _e( 'by', 'blogkori' );?></em> <?php the_author(); ?> <em><?php _e( 'on', 'blogkori' );?></em> <?php the_date(); ?></p>
+						<p class="post-meta"><em><?php _e( 'by', 'blogkori' );?></em> <?php the_author(); ?> <em><?php _e( 'on', 'blogkori' );?></em> <?php echo get_the_date(); ?></p>
 						<div class="post-content">
 							<div class="alignright"><?php if(has_post_thumbnail()) the_post_thumbnail('blogkori-category-thumb'); ?></div>
 							<?php the_content(esc_html__('[Continue reading...]', 'blogkori')); ?>

@@ -3,10 +3,10 @@
 if ( ! function_exists( 'blogkori_setup' ) ) :
 function blogkori_setup() {
     load_theme_textdomain('blogkori', get_template_directory() . '/languages');
-    
+
     // Automatic Feed Links
     add_theme_support( 'automatic-feed-links' );
-    
+
     // Title tag support
     add_theme_support( "title-tag" );
 
@@ -15,7 +15,7 @@ function blogkori_setup() {
 
     // Custom background
     add_theme_support( "custom-background" );
-    
+
     // Adding the header
 
     $blogkori_defaults = array(
@@ -34,7 +34,7 @@ function blogkori_setup() {
     );
 
     add_theme_support( 'custom-header', $blogkori_defaults );
-    
+
     // Register the navigation menu
     register_nav_menus( array(
         'primary' => __( 'Primary Menu', 'blogkori' )
@@ -43,8 +43,8 @@ function blogkori_setup() {
     //Post thumbnails need this in functions.php
     add_theme_support('post-thumbnails');
     add_image_size( 'blogkori-category-thumb', 300, 300 );
-    
-    
+
+
 }
 endif;
 add_action('after_setup_theme', 'blogkori_setup');
@@ -52,20 +52,20 @@ add_action('after_setup_theme', 'blogkori_setup');
 
 // Add scripts
 function blogkori_scripts() {
-    
+
     // Load bootstrap stylesheet
     wp_enqueue_style( 'bootstrap', get_template_directory_uri().'/css/bootstrap.min.css' );
     // Load theme stylesheet
     wp_enqueue_style( 'blogkori-style', get_stylesheet_uri());
-    
+
     // Load bootstrap javascript
     wp_enqueue_script( 'bootstrap-scripts', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.3.2', true );
-    // Load jquery    
+    // Load jquery
     wp_enqueue_script('jquery');
-    
+
     // Comment reply script
     if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' );
-    
+
 }
 add_action( 'wp_enqueue_scripts', 'blogkori_scripts' );
 
@@ -103,7 +103,36 @@ function blogkori_add_menuclass( $blogkori_ulclass ) {
 }
 add_filter( 'wp_page_menu', 'blogkori_add_menuclass' );
 
-// Registering The Sidebar
+// Registering top left sidebar
+function blogkori_top_left_sidebar() {
+    register_sidebar( array(
+        'name' => __( 'Post Top Left Sidebar', 'blogkori' ),
+        'id' => 'sidebar-top-left',
+        'description' => __( 'This is an ideal place to put a code block for adsense ads, 300x250 unit.', 'blogkori' ),
+		'before_widget' => '<div class="top-left-widget">',
+		'after_widget'  => '</div>',
+        'before_title' => '<p class="widget-title">',
+        'after_title' => '</p>'
+    ) );
+}
+add_action( 'widgets_init', 'blogkori_top_left_sidebar' );
+
+// Registering top right sidebar
+function blogkori_top_right_sidebar() {
+    register_sidebar( array(
+        'name' => __( 'Post Top Right Sidebar', 'blogkori' ),
+        'id' => 'sidebar-top-right',
+        'description' => __( 'This is an ideal place to put a code block for adsense ads, 300x250 unit.', 'blogkori' ),
+		'before_widget' => '<div class="top-right-widget">',
+		'after_widget'  => '</div>',
+        'before_title' => '<p class="widget-title">',
+        'after_title' => '</p>'
+    ) );
+}
+add_action( 'widgets_init', 'blogkori_top_right_sidebar' );
+
+
+// Registering The Sidebars
 function blogkori_sidebar() {
     register_sidebar( array(
         'name' => __( 'Right Sidebar', 'blogkori' ),
@@ -121,10 +150,10 @@ add_action( 'widgets_init', 'blogkori_sidebar' );
 
 function blogkori_comments_callback( $blogkori_comment, $blogkori_args, $blogkori_depth ) {
     $GLOBALS['comment'] = $blogkori_comment;
- 
+
     ?>
     <li <?php comment_class('media'); ?> id="li-comment-<?php comment_ID(); ?>">
-            
+
             <div class="single-comment">
 				<div class="avatar alignright">
 					<?php echo get_avatar( $blogkori_comment, 60 ); ?>
@@ -144,7 +173,7 @@ function blogkori_comments_callback( $blogkori_comment, $blogkori_args, $blogkor
 }
 
 // Add scripts to wp_head()
-function google_analytics_script() { 
+function google_analytics_script() {
                             $options = get_option('blogkori_theme_options');
                             echo $options['googanalytics'];
 

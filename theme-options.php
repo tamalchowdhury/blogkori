@@ -93,27 +93,22 @@ function theme_options_do_page() {
                 
             <div style="" class="right">
                 <h3>Useful links</h3>
-                <p><a href="http://www.blogkori.com/documentation" target="_blank" rel="noopener noreferrer">Documentation</a> - <a href="http://www.blogkori.com/support" target="_blank" rel="noopener noreferrer">Support</a></p>
+                <p><a href="https://blogkoritheme.blogspot.com/p/documentation.html" target="_blank" rel="noopener noreferrer">Documentation</a> - <a href="https://blogkoritheme.blogspot.com/p/support.html" target="_blank" rel="noopener noreferrer">Support</a> - <a href="https://blogkori.com" target="_blank" rel="noopener noreferrer">Read my Blog</a></p>
                 
                 <p>Have a question? Let me know in a tweet..</p>
-                <a href="https://twitter.com/intent/tweet?screen_name=tamalanwar" class="twitter-mention-button" data-size="large" data-text="(blogkori theme)" data-related="tamalanwar" data-show-count="false">Tweet to @tamalanwar</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                
-                <p>Stay updated about the BlogKori theme, get notified about new features, news and tips:</p>
-                
-                
-                <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=BlogKoriTheme', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Enter your email address:</p><p><input type="text" style="width:140px" name="email"/></p><input type="hidden" value="BlogKoriTheme" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /></form>
-                
-                <h3>Latest Updates</h3>
+                <a href="https://twitter.com/intent/tweet?screen_name=tamalweb" class="twitter-mention-button" data-size="small" data-text="(blogkori theme)" data-related="tamalanwar" data-show-count="false">Tweet to @tamalweb</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				
+                <h3>Latest Theme Updates</h3>
                 
                 
                 <div style="padding: 20px;" class="postbox">
                     <?php
                             echo '<div class="rss-widget">';
                          wp_widget_rss_output(array(
-                              'url' => 'http://feeds.feedburner.com/BlogKoriTheme',
-                              'title' => 'BlogKori',
+                              'url' => 'http://feeds.feedburner.com/blogkoritheme',
+                              'title' => 'BlogKori Theme Updates',
                               'items' => 3,
-                              'show_summary' => 0,
+                              'show_summary' => 1,
                               'show_author' => 0,
                               'show_date' => 0
                          ));
@@ -121,12 +116,31 @@ function theme_options_do_page() {
 
                         ?>
 
-                    <p style="text-align: right;"><a href="http://www.blogkori.com/blog" target="_blank">Visit BlogKori</a>  </p>              
+                    <p style="text-align: right;"><a href="https://blogkoritheme.blogspot.com" target="_blank">BlogKori Theme Blog</a>  </p>              
                     </div>
     
                 <h3>Video Tutorial</h3>
                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/sM8pryoovTo?rel=0" frameborder="0" allowfullscreen></iframe>
                 
+				
+				<h3>Donations are Welcome</h3>
+                
+				<p>Loved this theme? Please consider donating to support continuous development:
+				
+				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HS38Y2J2X6Z3J" target="_blank">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/donate.png">
+				</a>
+				
+				</p>
+				
+				<p><b>Bitcoin:</b> <a href="https://blockchain.info/address/17FS5vP44AUdJa5L62md8EP3wNk37LpLQR" target="_blank">17FS5vP44AUdJa5L62md8EP3wNk37LpLQR</a></br>
+				
+				<b>Ethereum:</b> <a href="https://www.etherchain.org/account/0x6C8E78b709cF2a9e305c5FEC20e08d69E98d3a61" target="_blank">0x6C8E78b709cF2a9e305c5FEC20e08d69E98d3a61</a></br>
+				
+				<b>Vertcoin:</b> <a href="https://bchain.info/VTC/addr/VbJgEauTWwhXp6aUkgD9ThmwzcM5yL7gbU" target="_blank">VbJgEauTWwhXp6aUkgD9ThmwzcM5yL7gbU</a></br>
+				
+				
+				</p>
                 
             </div>
         </div>

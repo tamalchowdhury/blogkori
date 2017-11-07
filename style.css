@@ -1,10 +1,10 @@
 /*
 Theme Name: BlogKori
-Theme URI: http://www.blogkori.com
-Author: Tamal Anwar
-Author URI: http://www.tamalanwar.com
+Theme URI: https://blogkori.com/theme
+Author: Tamal A. Chowdhury
+Author URI: https://blogkori.com
 Description: BlogKori is a fully responsive minimalist blogging WordPress theme for personal blogs, photography blogs or for business bloggers. If you are a writer, traveler, adventure, artist and you have a blog, then this is the perfect blog for you. BlogKori is a clean simple design with awesome typography. The theme has custom logo, header, custom background image which you can easily setup from the theme customizer option. The theme also features drop down menus, right sidebar area, threaded comments option and sticky post. Add featured images to your blog posts and make your readers love your blog. This theme is built on bootstrap framework which is mobile responsive. It is a light theme with HTML5 standard markup which makes it SEO friendly.
-Version: 1.3.2
+Version: 1.3.5
 Text Domain: blogkori
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -18,7 +18,7 @@ Tags:  blog, education, news, two-columns, right-sidebar, custom-header, custom-
 /* The platform of the entire website */
 
 body {
-	background: #efefef; /* Light gray background */ 
+	background: #efefef; /* Light gray background */
 	color: #333333; /* Global text color set to light black */
 	font-family: "Georgia", serif; /* Global font */
 	font-size: 18px; /* Global font size */
@@ -119,7 +119,7 @@ dd {
 
 /* Table borders */
 
-td, 
+td,
 th {
     border: 1px solid #ddd;
     padding: 5px;
@@ -155,11 +155,11 @@ header { /* Entire Header Section */
 }
 
 #header { /* Inner Header Section */
-	
+
 }
 
 #header p {
-	
+
 }
 
 #title { /* Site Title in Text */
@@ -174,7 +174,7 @@ header { /* Entire Header Section */
 }
 
 #title a:hover {
-	
+
 }
 
 #logo { /* Image Logo, Inside img tag */
@@ -207,7 +207,7 @@ header { /* Entire Header Section */
 }
 
 #navigation { /* Inner Navigation Section */
-	
+
 }
 
 #menu { /* The Main Navigation ul */
@@ -221,7 +221,7 @@ header { /* Entire Header Section */
 }
 
 .navbar-nav>li>a {
-	
+
 }
 
 .dropdown-menu {
@@ -285,19 +285,23 @@ nav .current-menu-parent a*/ {
 }
 
 main { /* (Content + Comments) */
-	
+
 }
 
 #content {
 	border-right: 1px solid #dddddd;
 }
 
+.top-widget-area {
+	margin: 1em;
+}
+
 article { /* Blog Article */
-	
+
 }
 
 article p {
-	
+
 }
 
 .border {
@@ -329,15 +333,15 @@ p.post-tags {
 }
 
 p.post-tags a {
-	
+
 }
 
 p.post-tags a:hover {
-	
+
 }
 
 .post-image { /* Featured Image */
-	
+
 }
 
 .prev-next {
@@ -373,11 +377,11 @@ p.to-comments a:hover {
 }
 
 #comments { /* The Comments Section */
-	
+
 }
 
 #comments p {
-	
+
 }
 
 .comments-title {
@@ -408,7 +412,7 @@ p.to-comments a:hover {
 }
 
 .avatar { /* Comment Avatar Section */
-	
+
 }
 
 .avatar img { /* Comment Avatar Image */
@@ -464,16 +468,16 @@ p.to-comments a:hover {
 
 .children .comment-author-admin {
     border-color: #b1dafb;
-	
+
 }
 
 
 .children {
-	
+
 }
 
 .comment-form {
-	
+
 }
 
 /* --------------------------------------
@@ -485,7 +489,7 @@ p.to-comments a:hover {
 }
 
 #sidebar p {
-	
+
 }
 
 #sidebar ul {
@@ -520,11 +524,11 @@ p.to-comments a:hover {
 }
 
 .widget-title a {
-	
+
 }
 
 .widget-title a:hover {
-	
+
 }
 
 /* --------------------------------------
@@ -539,19 +543,19 @@ footer { /* Entire Footer Section */
 }
 
 #footer { /* Inner Footer */
-	
+
 }
 
 #footer p {
-	
+
 }
 
 #footer a {
-	
+
 }
 
 #footer a:hover {
-	
+
 }
 
 /* --------------------------------------
@@ -629,7 +633,7 @@ footer { /* Entire Footer Section */
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-	
+
 }
 
 /* Landscape phone to portrait tablet */
@@ -637,19 +641,19 @@ footer { /* Entire Footer Section */
 	.navbar-brand {
 		display: block;
 	}
-	
+
 	header {
 		display: none;
 	}
-	
+
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
 		color: #ffffff!important;
 	}
-	
+
 	.single-comment { /* Single Comment Box */
 		margin: 0.6em 0;
 	}
-	
+
 	.children {
 		padding-left: 0.6em;
 	}
@@ -658,7 +662,7 @@ footer { /* Entire Footer Section */
 		border-left: 1px solid #dddddd;
 		padding-left: 0.6em;
 	}
-	
+
 	.comments-title,
 	.comment-respond,
 	.comment-navigation,
@@ -671,57 +675,57 @@ footer { /* Entire Footer Section */
 	.single-comment { /* Single Comment Box */
 		margin: 0.6em 0;
 	}
-    
-    button, 
-    input, 
-    select, 
+
+    button,
+    input,
+    select,
     textarea {
         max-width: 100%;
     }
-    
+
     .alignleft,
     .alignright {
         max-width: 50%;
     }
-    
+
     .sticky {
         border-left: 0!important;
     }
-    
+
 }
 
 /* Landscape phone to portrait tablet */
 @media (min-width: 768px) {
-	
+
 	.navbar-brand {
 		display: none;
 	}
-	
-	
-	
-	#content { 
+
+
+
+	#content {
 		padding: 0;
 	}
-	
+
 	.article ,
 	#sidebar {
 		padding: 1em 1.6em;
 	}
-	
+
 	.navbar {
 		margin-bottom: 0;
 		border-radius: 0;
 	}
-	
+
 	.navbar-collapse {
 		padding-right: 0;
 		padding-left: 0;
 	}
-	
+
 	.prev-next {
 		padding: 1em 1.6em;
 	}
-	
+
 }
 
 /* Small Older Desktops with CRT Monitor  */
@@ -736,13 +740,13 @@ footer { /* Entire Footer Section */
 		margin-bottom: 1em;
 		box-shadow: 0px 1px 3px #ddd;
 	}
-	
+
 	.container {
 		width: 900px;
 	}
-	
+
 	#content-box {
-		
+
 	}
 
 }

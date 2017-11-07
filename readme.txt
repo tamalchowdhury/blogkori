@@ -1,5 +1,5 @@
 BlogKori Theme README file
-Version 1.3.1 Last updated on Jun 8, 2017
+Version 1.3.4 Last updated on Aug 21, 2017
 
 #######################
 # * Developers Note * #
@@ -19,8 +19,8 @@ I will make more themes with cool features. If you love my theme
 and use it on your site, please send me an email with your site 
 address and I will be happy to check it out.
 
-Read my blog at http://www.tamalanwar.com/blog 
-email: tamal[at]tamalanwar[dot]com ~ tweet me @TamalAnwar 
+Read my blog at https://blogkori.com 
+email: tamalanwaronline[at]gmail[dot]com ~ tweet me @tamalweb 
 
 #######################
 # ** Theme License ** #
@@ -29,7 +29,7 @@ email: tamal[at]tamalanwar[dot]com ~ tweet me @TamalAnwar
 GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Copyright (C) 2017 Tamal Anwar Chowdhury tamal[at]tamalanwar[dot]com
+Copyright (C) 2017 Tamal A. Chowdhury tamalanwaronline[at]gmail[dot]com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -83,7 +83,7 @@ please add just one level of drop down, thanks.
 #######################
 
 # Limited support available via WordPress theme support page; 
-Twitter @TamalAnwar or from my facebook page: fb.com/TamalAnwar
+Twitter @tamalweb or from my facebook page: fb.com/blogkori
 
 #######################
 # *** Change Log *** #
@@ -95,6 +95,6 @@ Official WP release to the public
 1.2.14
 Fixed mobile hamburger menu not working
 
-1.3.1
-Minor changes
-
+1.3.1-4
+Theme options; Google Analytics option
+Minor changes and bug fixes

@@ -28,12 +28,12 @@
 				
 			?>
 		</header>
-		<nav id="nav" class="navbar navbar-default row">
+		<nav id="nav" class="navbar navbar-default row" role="navigation">
   <div class="">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
 	<div class="col-xs-10 no-pad">
-	<h2 class="navbar-brand"><a href="<?php echo esc_url(home_url('/')); ?>"><?php echo bloginfo('name'); ?></a></h2>
+	<h1 class="navbar-brand"><a href="<?php echo esc_url(home_url('/')); ?>"><?php echo bloginfo('name'); ?></a></h1>
 	</div>
 	<div class="col-xs-2 no-pad">
 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
