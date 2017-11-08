@@ -3,19 +3,9 @@ A minimalist WordPress Theme
 
 ## Developers note
 
-Hey thanks for downloading this theme and actually opening and
-reading this "README" file. This theme was inspired from the
-Thesis Theme from DIYthemes. I created this same design in that
-premium thesis theme. Then when it was time for me to create a
-WordPress theme, I took this design as an inspiration. All the
-typography, line borders and even the curly braces next to the
-{1 comment} was inspired from the original thesis 1.8
+Hey thanks for downloading this theme and actually opening and reading this "README" file. This theme was inspired from the Thesis Theme from DIYthemes. I created this same design in that premium thesis theme. Then when it was time for me to create a WordPress theme, I took this design as an inspiration. All the typography, line borders and even the curly braces next to the {1 comment} was inspired from the original thesis 1.8
 
-This is my first theme, so it does not have any extra features.
-As I learn more and more about WordPress theme development,
-I will make more themes with cool features. If you love my theme
-and use it on your site, please send me an email with your site
-address and I will be happy to check it out.
+This is my first theme, so it does not have any extra features. As I learn more and more about WordPress theme development, I will make more themes with cool features. If you love my theme and use it on your site, please send me an email with your site address and I will be happy to check it out.
 
 Read my blog at https://blogkori.com
 email: tamalanwaronline[at]gmail[dot]com ~ tweet me @tamalanwar
