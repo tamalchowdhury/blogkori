@@ -61,6 +61,7 @@ function theme_options_do_page() {
 
             .left {
                 width:69%;
+				max-width: 500px;
                 padding-right: 1%;
                 float:left;
                 display:inline-block;
@@ -69,8 +70,9 @@ function theme_options_do_page() {
 
             .right {
                 width:29%;
+				max-width: 400px;
                 padding-right: 1%;
-                float:left;
+                float:right;
                 display:inline-block;
                 }
             </style>
@@ -92,35 +94,47 @@ function theme_options_do_page() {
 
             <div style="" class="right">
                 <h3>Useful links</h3>
-                <p><a href="https://blogkoritheme.blogspot.com/p/documentation.html" target="_blank" rel="noopener noreferrer">Documentation</a> - <a href="https://blogkoritheme.blogspot.com/p/support.html" target="_blank" rel="noopener noreferrer">Support</a> - <a href="https://blogkori.com" target="_blank" rel="noopener noreferrer">Read my Blog</a></p>
+                <p><a href="https://blogkoritheme.blogspot.com/p/documentation.html" target="_blank" rel="noopener noreferrer">Documentation</a> - <a href="https://wordpress.org/support/theme/blogkori" target="_blank" rel="noopener noreferrer">Support</a> - <a href="http://www.tamalanwar.com/" target="_blank" style="color:#37a000;font-weight:bold;">Hire me!</a>
 
                 <p>Have a question? Let me know in a tweet..</p>
                 <a href="https://twitter.com/intent/tweet?screen_name=tamalanwar" class="twitter-mention-button" data-size="small" data-text="(blogkori theme)" data-related="tamalanwar" data-show-count="false">Tweet to @TamalAnwar</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-				<h3>Video Tutorial</h3>
-                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/sM8pryoovTo?rel=0" frameborder="0" allowfullscreen></iframe>
+				<!-- <h3>Video Tutorial</h3>
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/sM8pryoovTo?rel=0" frameborder="0" allowfullscreen></iframe> -->
 
 
+				<h3>Fresh from my Blog</h3>
+				<div style="padding: 20px;" class="postbox">
+				<?php
+						echo '<div class="rss-widget">';
+					 wp_widget_rss_output(array(
+						  'url' => 'http://feeds.feedburner.com/blogkori',
+						  'title' => 'BlogKori Theme Updates',
+						  'items' => 3,
+						  'show_summary' => 1,
+						  'show_author' => 0,
+						  'show_date' => 0
+					 ));
+					 echo '</div>';
+					?>
+				<p style="text-align: right;"><a href="https://blogkori.com" target="_blank">BlogKori.com</a>  </p>
+				</div>
                 <h3>Latest Theme Updates</h3>
-
-
                 <div style="padding: 20px;" class="postbox">
-                    <?php
-                            echo '<div class="rss-widget">';
-                         wp_widget_rss_output(array(
-                              'url' => 'http://feeds.feedburner.com/blogkoritheme',
-                              'title' => 'BlogKori Theme Updates',
-                              'items' => 3,
-                              'show_summary' => 1,
-                              'show_author' => 0,
-                              'show_date' => 0
-                         ));
-                         echo '</div>';
-
-                        ?>
-
-                    <p style="text-align: right;"><a href="https://blogkoritheme.blogspot.com" target="_blank">BlogKori Theme Blog</a>  </p>
-                    </div>
+                <?php
+                        echo '<div class="rss-widget">';
+                     wp_widget_rss_output(array(
+                          'url' => 'http://feeds.feedburner.com/blogkoritheme',
+                          'title' => 'BlogKori Theme Updates',
+                          'items' => 3,
+                          'show_summary' => 0,
+                          'show_author' => 0,
+                          'show_date' => 0
+                     ));
+                     echo '</div>';
+                    ?>
+                <p style="text-align: right;"><a href="https://blogkoritheme.blogspot.com" target="_blank">BlogKori Theme Blog</a>  </p>
+                </div>
 
 
 
