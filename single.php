@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 		<div id="content-box" class="row">
 			<main id="content" class="col-sm-9">
-				<?php get_template_part('top-widget-area'); ?>
 				<?php if(have_posts()): while(have_posts()): the_post(); ?>
 					<article <?php post_class('article'); ?>>
 					<h2 id="post-<?php the_ID(); ?>" class="post-title"><?php the_title(); ?></h2>

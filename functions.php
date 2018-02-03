@@ -103,35 +103,6 @@ function blogkori_add_menuclass( $blogkori_ulclass ) {
 }
 add_filter( 'wp_page_menu', 'blogkori_add_menuclass' );
 
-// Registering top left sidebar
-function blogkori_top_left_sidebar() {
-    register_sidebar( array(
-        'name' => __( 'Post Top Left Sidebar', 'blogkori' ),
-        'id' => 'sidebar-top-left',
-        'description' => __( 'This is an ideal place to put a code block for adsense ads, 300x250 unit.', 'blogkori' ),
-		'before_widget' => '<div class="top-left-widget">',
-		'after_widget'  => '</div>',
-        'before_title' => '<p class="widget-title">',
-        'after_title' => '</p>'
-    ) );
-}
-add_action( 'widgets_init', 'blogkori_top_left_sidebar' );
-
-// Registering top right sidebar
-function blogkori_top_right_sidebar() {
-    register_sidebar( array(
-        'name' => __( 'Post Top Right Sidebar', 'blogkori' ),
-        'id' => 'sidebar-top-right',
-        'description' => __( 'This is an ideal place to put a code block for adsense ads, 300x250 unit.', 'blogkori' ),
-		'before_widget' => '<div class="top-right-widget">',
-		'after_widget'  => '</div>',
-        'before_title' => '<p class="widget-title">',
-        'after_title' => '</p>'
-    ) );
-}
-add_action( 'widgets_init', 'blogkori_top_right_sidebar' );
-
-
 // Registering The Sidebars
 function blogkori_sidebar() {
     register_sidebar( array(
@@ -145,6 +116,15 @@ function blogkori_sidebar() {
     ) );
 }
 add_action( 'widgets_init', 'blogkori_sidebar' );
+
+// Next previous navigation Links
+
+$next_args = array(
+    'mid_size' => 3,
+    'prev_text' => __('Newer posts', 'blogkori'),
+    'next_text' => __('Older posts', 'blogkori')
+
+);
 
 // Custom comment callback
 

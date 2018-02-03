@@ -17,12 +17,12 @@
 						</p>
 						<p class="to-comments">{ <?php comments_popup_link(esc_html__('Add a Comment', 'blogkori'), esc_html__('1 Comment', 'blogkori'), esc_html__('% Comments', 'blogkori'), 'to-comments', esc_html('Comments are closed', 'blogkori')); ?> }</p>
 					</article>
-				<?php endwhile; ?>			
+				<?php endwhile; ?>
 			<?php else: ?>
 				<!-- No posts found -->
 			<?php endif; ?>
 				<div class="prev-next">
-					<?php the_posts_pagination(); ?>
+					<?php the_posts_pagination($next_args); ?>
 				</div>
 			</main>
 			<?php get_sidebar(); ?>

@@ -54,7 +54,6 @@ function theme_options_do_page() {
                 }
 
             .row {
-                    /*width: 1000px;*/
                     width: 100%;
                     display: table;
                     clear: both;
@@ -81,7 +80,7 @@ function theme_options_do_page() {
             <div class="row">
             <div style="" class="left">
                 <h3>Google Analytics</h3>
-                <p>This is where you should add Google Analytics or other tracking scripts</p>
+                <p>Paste the Google Analytics or other tracking scripts here:</p>
 						<textarea id="blogkori_theme_options[googanalytics]" class="large-text" cols="50" rows="5" name="blogkori_theme_options[googanalytics]" onclick="this.focus();this.select()"><?php echo esc_textarea( $options['googanalytics'] ); ?></textarea>
 
                 <p class="submit">
@@ -98,8 +97,12 @@ function theme_options_do_page() {
                 <p>Have a question? Let me know in a tweet..</p>
                 <a href="https://twitter.com/intent/tweet?screen_name=tamalanwar" class="twitter-mention-button" data-size="small" data-text="(blogkori theme)" data-related="tamalanwar" data-show-count="false">Tweet to @TamalAnwar</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+				<h3>Video Tutorial</h3>
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/sM8pryoovTo?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
                 <h3>Latest Theme Updates</h3>
-                
+
 
                 <div style="padding: 20px;" class="postbox">
                     <?php
@@ -119,25 +122,6 @@ function theme_options_do_page() {
                     <p style="text-align: right;"><a href="https://blogkoritheme.blogspot.com" target="_blank">BlogKori Theme Blog</a>  </p>
                     </div>
 
-                <h3>Video Tutorial</h3>
-                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/sM8pryoovTo?rel=0" frameborder="0" allowfullscreen></iframe>
-
-
-				<h3>Donations are Welcome</h3>
-
-				<p>Loved this theme? Please consider donating to support continuous development:
-
-				<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HS38Y2J2X6Z3J" target="_blank">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/donate.png">
-				</a>
-
-				</p>
-
-				<p><b>Bitcoin:</b> <a href="https://blockchain.info/address/17FS5vP44AUdJa5L62md8EP3wNk37LpLQR" target="_blank">17FS5vP44AUdJa5L62md8EP3wNk37LpLQR</a></br>
-
-				<b>Ethereum:</b> <a href="https://www.etherchain.org/account/0x6C8E78b709cF2a9e305c5FEC20e08d69E98d3a61" target="_blank">0x6C8E78b709cF2a9e305c5FEC20e08d69E98d3a61</a></br>
-
-				<b>Vertcoin:</b> <a href="https://bchain.info/VTC/addr/VbJgEauTWwhXp6aUkgD9ThmwzcM5yL7gbU" target="_blank">VbJgEauTWwhXp6aUkgD9ThmwzcM5yL7gbU</a></br>
 
 
 				</p>

@@ -346,7 +346,22 @@ p.post-tags a:hover {
 
 .prev-next {
 	font-size: 0.8em;
-	letter-spacing: 2px;
+	/* letter-spacing: 2px; */
+	text-align: center;
+}
+
+.prev-next {
+	clear: both;
+}
+
+.page-numbers {
+	padding: 0 5px;
+}
+
+/* Post navigation styles */
+
+.screen-reader-text {
+	display: none;
 }
 
 
@@ -374,6 +389,10 @@ p.to-comments a {
 p.to-comments a:hover {
 	color: #888888;
 	text-decoration: underline;
+}
+
+#commentform label {
+	display: block;
 }
 
 #comments { /* The Comments Section */

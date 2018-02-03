@@ -21,7 +21,7 @@
 				<!-- No posts found -->
 			<?php endif; ?>
 				<div class="prev-next">
-                     <?php the_posts_pagination(); ?>
+                     <?php the_posts_pagination($next_args); ?>
 				</div>
 			</main>
 			<?php get_sidebar(); ?>
