@@ -78,4 +78,5 @@ Theme options; Google Analytics option
 Minor changes and bug fixes
 
 1.3.5
-Added option for ad widgets
+~~Added option for ad widgets~~
+Made some minor changes to the layout
