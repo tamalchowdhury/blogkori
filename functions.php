@@ -28,12 +28,15 @@ function blogkori_setup() {
         'random-default'         => false,
         'header-text'            => false,
         'default-text-color'     => '',
-        'wp-head-callback'       => '',
+        'wp-head-callback'       => 'blogkori_header_style',
         'admin-head-callback'    => '',
         'admin-preview-callback' => '',
     );
 
     add_theme_support( 'custom-header', $blogkori_defaults );
+
+
+
 
     // Register the navigation menu
     register_nav_menus( array(
@@ -68,6 +71,18 @@ function blogkori_scripts() {
 
 }
 add_action( 'wp_enqueue_scripts', 'blogkori_scripts' );
+
+// 1. customizer-preview.js
+function blogkori_customize_preview_js() {
+    wp_enqueue_script( 'tuts_customizer_preview', get_template_directory_uri() . '/inc/customizer-preview.js', array( 'customize-preview' ), null, true );
+}
+add_action( 'customize_preview_init', 'blogkori_customize_preview_js' );
+
+// 2. customizer-control.js
+function blogkori_customize_control_js() {
+    wp_enqueue_script( 'tuts_customizer_control', get_template_directory_uri() . '/inc/customizer-control.js', array( 'customize-controls', 'jquery' ), null, true );
+}
+add_action( 'customize_controls_enqueue_scripts', 'blogkori_customize_control_js' );
 
 
 // Adding page navigation
@@ -152,6 +167,66 @@ function blogkori_comments_callback( $blogkori_comment, $blogkori_args, $blogkor
     <?php
 }
 
+// Theme options in customizer
+
+function blogkori_customize_register( $wp_customize ) {
+    // Theme accent color
+    $wp_customize->add_setting('theme_accent_color', array(
+        'default' => '#25aae2',
+        'transport' => 'postMessage',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'sanitize_hex_color',
+    )
+
+    );
+    // Theme links color
+    $wp_customize->add_setting('theme_link_color', array(
+        'default' => '#2198f4',
+        'transport' => 'postMessage',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'sanitize_hex_color',
+    )
+
+    );
+    // Theme text color
+    $wp_customize->add_setting('theme_text_color', array(
+        'default' => '#333333',
+        'transport' => 'postMessage',
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'sanitize_hex_color',
+    )
+
+    );
+
+    // Adding the accent color Controls
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'theme_bg_color', array(
+                'label' =>  __('Primary theme color', 'blogkori'),
+                'section' => 'colors',
+                'settings' => 'theme_accent_color'
+            )
+        )
+
+    );
+    $wp_customize->add_control(
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'theme_link_color', array(
+                'label' =>  __('Link color', 'blogkori'),
+                'section' => 'colors',
+                'settings' => 'theme_link_color'
+            )
+        )
+
+    );
+
+}
+add_action( 'customize_register', 'blogkori_customize_register' );
+
+
+
 // Add scripts to wp_head()
 function google_analytics_script() {
                             $options = get_option('blogkori_theme_options');
@@ -159,6 +234,57 @@ function google_analytics_script() {
 
  }
 add_action( 'wp_head', 'google_analytics_script' );
+
+if ( ! function_exists( 'blogkori_header_style' ) ) :
+    /**
+     * Styles the header image and text displayed on the blog.
+     *
+     * @see blogkori_custom_header_setup().
+     */
+    function blogkori_header_style() {
+        $theme_accent_color = get_theme_mod('theme_accent_color');
+        $theme_link_color = get_theme_mod('theme_link_color');
+
+        /*
+         * If no custom options for text are set, let's bail.
+         * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).
+         */
+        if ('#25aae2' != $theme_accent_color) { ?>
+            <style type="text/css">
+             #nav,
+             .navbar-default {
+                 background-color: <?php echo esc_attr($theme_accent_color); ?>;
+                 }
+
+             .sticky {
+                border-left-color: <?php echo esc_attr($theme_accent_color); ?>;
+             }
+
+             </style>
+             <?php
+            }
+
+        if ('#2198f4' != $theme_link_color) { ?>
+            <style type="text/css">
+            #header a,
+            #content-box a,
+            #footer a {
+                color: <?php echo esc_attr($theme_link_color); ?>;
+            }
+
+            .navbar-default .navbar-nav > .active > a,
+            .navbar-default .navbar-nav > .active > a:hover,
+            nav .menu-item a:hover
+             {
+                background-color: <?php echo esc_attr($theme_link_color); ?>!important;
+                color: #ffffff!important;
+            }
+-
+             </style>
+             <?php
+            }
+        }
+        endif;
 
 
 

@@ -124,16 +124,16 @@ function theme_options_do_page() {
                 <?php
                         echo '<div class="rss-widget">';
                      wp_widget_rss_output(array(
-                          'url' => 'http://feeds.feedburner.com/blogkoritheme',
+                          'url' => 'https://github.com/TamalAnwar/blogkori/releases',
                           'title' => 'BlogKori Theme Updates',
                           'items' => 3,
-                          'show_summary' => 0,
+                          'show_summary' => 1,
                           'show_author' => 0,
                           'show_date' => 0
                      ));
                      echo '</div>';
                     ?>
-                <p style="text-align: right;"><a href="https://blogkoritheme.blogspot.com" target="_blank">BlogKori Theme Blog</a>  </p>
+                <p style="text-align: right;"><a href="https://github.com/TamalAnwar/blogkori/releases" target="_blank">BlogKori Theme Updates</a>  </p>
                 </div>
 
 
