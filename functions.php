@@ -147,7 +147,7 @@ function blogkori_comments_callback( $blogkori_comment, $blogkori_args, $blogkor
     $GLOBALS['comment'] = $blogkori_comment;
 
     ?>
-    <li <?php comment_class('media'); ?> id="li-comment-<?php comment_ID(); ?>">
+    <li <?php comment_class('media'); ?> id="comment-<?php comment_ID(); ?>">
 
             <div class="single-comment">
 				<div class="avatar alignright">
@@ -256,7 +256,9 @@ if ( ! function_exists( 'blogkori_header_style' ) ) :
                  background-color: <?php echo esc_attr($theme_accent_color); ?>;
                  }
 
-             .sticky {
+             .sticky,
+             .comment-author-admin,
+             .children .comment-author-admin {
                 border-left-color: <?php echo esc_attr($theme_accent_color); ?>;
              }
 
@@ -266,19 +268,32 @@ if ( ! function_exists( 'blogkori_header_style' ) ) :
 
         if ('#2198f4' != $theme_link_color) { ?>
             <style type="text/css">
-            #header a,
-            #content-box a,
-            #footer a {
+
+            /* .post-title a {
+                color: #333333;
+            } */
+
+            a,
+            a:hover,
+            /* a:visited, */
+            .post-title a:hover,
+            #title,
+            #title a {
                 color: <?php echo esc_attr($theme_link_color); ?>;
             }
 
             .navbar-default .navbar-nav > .active > a,
             .navbar-default .navbar-nav > .active > a:hover,
+            .navbar-default .navbar-nav>.open>a,
+            .navbar-default .navbar-nav>.open>a:focus,
+            .navbar-default .navbar-nav>.open>a:hover,
             nav .menu-item a:hover
              {
                 background-color: <?php echo esc_attr($theme_link_color); ?>!important;
                 color: #ffffff!important;
             }
+
+
 -
              </style>
              <?php

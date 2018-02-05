@@ -94,7 +94,7 @@ function theme_options_do_page() {
 
             <div style="" class="right">
                 <h3>Useful links</h3>
-                <p><a href="https://blogkoritheme.blogspot.com/p/documentation.html" target="_blank" rel="noopener noreferrer">Documentation</a> - <a href="https://wordpress.org/support/theme/blogkori" target="_blank" rel="noopener noreferrer">Support</a> - <a href="http://www.tamalanwar.com/" target="_blank" style="color:#37a000;font-weight:bold;">Hire me!</a>
+                <p><a href="https://github.com/TamalAnwar/blogkori/wiki" target="_blank" rel="noopener noreferrer">Documentation</a> - <a href="https://wordpress.org/support/theme/blogkori" target="_blank" rel="noopener noreferrer">Support</a> - <a href="http://www.tamalanwar.com/" target="_blank" style="color:#37a000;font-weight:bold;">Hire me!</a>
 
                 <p>Have a question? Let me know in a tweet..</p>
                 <a href="https://twitter.com/intent/tweet?screen_name=tamalanwar" class="twitter-mention-button" data-size="small" data-text="(blogkori theme)" data-related="tamalanwar" data-show-count="false">Tweet to @TamalAnwar</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

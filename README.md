@@ -1,5 +1,5 @@
 # BlogKori Theme
-A minimalist WordPress Theme
+BlogKori is a fully responsive minimalist blogging WordPress theme for personal blogs, photography blogs or for business bloggers. If you are a writer, traveler, adventure, artist and you have a blog, then this is the perfect blog for you. BlogKori is a clean simple design with awesome typography. The theme has custom logo, header, custom background image which you can easily setup from the theme customizer option. It has Google Analytics tracking box. You can also change the default color scheme of this design to your liking. The theme also features drop down menus, right sidebar area, threaded comments option and sticky post. Add featured images to your blog posts and make your readers love your blog. This theme is built on bootstrap framework which is mobile responsive. It is a light theme with HTML5 standard markup which makes it SEO friendly.
 
 ## Developers note
 
@@ -10,12 +10,58 @@ This is my first theme, so it does not have any extra features. As I learn more 
 Read my blog at https://blogkori.com
 email: tamalanwaronline[at]gmail[dot]com ~ tweet me @tamalanwar
 
+## Theme Features
+
+* Simple minimalist design with good typography
+* Widgetized sidebar area
+* Custom menu area with drop down menus
+* Threaded/nested comments
+* Choose your own header logo from theme customizer
+* Choose your own site background color or image
+* Mobile and tablet ready responsive design
+* HTML5 clean code base for faster page load
+* New in 1.3.4: Theme options page and Google Analytics tracking code box
+* New in 1.3.6: Change the color scheme from the default blue to your choice
+
+## Theme Limitations
+
+**Theme menu does not show logo when viewed from mobile devices.**
+It will show the website name in place of the logo. Will work on this in the future releases.
+
+**Theme menu has 1 level of drop down, and you have to click on**
+the menu to show the drop down menu. So when setting up a menu
+please add just one level of drop down, thanks.
+
+## Theme Support
+
+**Limited support available via WordPress theme support page**
+Twitter @tamalanwar or from my facebook: fb.com/tamalanwar
+
+## Changelog
+
+1.2.13
+Official WP release to the public
+
+1.2.14
+Fixed mobile hamburger menu not working
+
+1.3.1-1.3.4*
+Theme options; Google Analytics option
+Minor changes and bug fixes
+
+1.3.5
+~~Added option for ad widgets~~
+Made some minor changes to the layout
+
+1.3.6*
+Added option to change default color scheme and link colors from theme customizer menu.
+
 ## Theme License
 
 GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Copyright (C) 2017 Tamal A. Chowdhury tamalanwaronline[at]gmail[dot]com
+Copyright (C) 2018 Tamal Anwar tamalanwaronline[at]gmail[dot]com
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -39,44 +85,3 @@ Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 Theme uses standard Jquery libraries
 jQuery v1.11.2 | (c) 2005, 2014 jQuery Foundation, Inc.
 http://jquery.org/license
-
-## Theme Features
-
-* Simple minimalist design with good typography
-* Widgetized sidebar area
-* Custom menu area with drop down menus
-* Threaded/nested comments
-* Choose your own header logo from theme customizer
-* Choose your own site background color or image
-* Mobile and tablet ready responsive design
-* HTML5 clean code base for faster page load
-
-## Theme Limitations
-
-**Theme menu does not show logo when viewed from mobile devices.**
-It will show the website name in place of the logo
-
-**Theme menu has 1 level of drop down, and you have to click on**
-the menu to show the drop down menu. So when setting up a menu
-please add just one level of drop down, thanks.
-
-## Theme Support
-
-**Limited support available via WordPress theme support page**
-Twitter @tamalanwar or from my facebook page: fb.com/blogkori
-
-## Changelog
-
-1.2.13
-Official WP release to the public
-
-1.2.14
-Fixed mobile hamburger menu not working
-
-1.3.1-4
-Theme options; Google Analytics option
-Minor changes and bug fixes
-
-1.3.5
-~~Added option for ad widgets~~
-Made some minor changes to the layout

@@ -14,11 +14,11 @@
 
     wp.customize('theme_link_color', function(value) {
         value.bind(function(to) {
-            $('#header a, #content-box a, #footer a').css({
+            $('a, a:hover, a:visited, .post-title a:hover, #title, #title a').css({
                 'color': to
             });
 
-            $('.navbar-default .navbar-nav > .active > a').css({
+            $('.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default, .navbar-nav>.open>a:hover, nav .menu-item a:hover').css({
                 'background-color': to
             });
         });
