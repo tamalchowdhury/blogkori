@@ -8,7 +8,7 @@ Hey thanks for downloading this theme and actually opening and reading this "REA
 This is my first theme, so it does not have any extra features. As I learn more and more about WordPress theme development, I will make more themes with cool features. If you love my theme and use it on your site, please send me an email with your site address and I will be happy to check it out.
 
 Read my blog at https://blogkori.com
-email: tamalanwaronline[at]gmail[dot]com ~ tweet me @tamalanwar
+email: tamalanwaronline[at]gmail[dot]com ~ tweet me @tamalweb
 
 ## Theme Features
 
@@ -35,7 +35,7 @@ please add just one level of drop down, thanks.
 ## Theme Support
 
 **Limited support available via WordPress theme support page**
-Twitter @tamalanwar or from my facebook: fb.com/tamalanwar
+Twitter @tamalweb or from my facebook: fb.com/tamalanwar
 
 ## Changelog
 
@@ -55,6 +55,9 @@ Made some minor changes to the layout
 
 1.3.6*
 Added option to change default color scheme and link colors from theme customizer menu.
+
+1.3.7
+Changed author links
 
 ## Theme License
 
