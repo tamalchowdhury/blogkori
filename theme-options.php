@@ -117,7 +117,7 @@ function theme_options_do_page() {
 					 ));
 					 echo '</div>';
 					?>
-				<p style="text-align: right;"><a href="https://blogkori.com" target="_blank">BlogKori.com</a>  </p>
+				<p style="text-align: right;"><a href="https://blogkori.com/theme?utm_source=options_page&utm_medium=referral&utm_campaign=blogkori_theme" target="_blank">BlogKori.com</a>  </p>
 				</div>
                 <h3>Latest Theme Updates</h3>
                 <div style="padding: 20px;" class="postbox">
