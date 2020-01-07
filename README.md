@@ -1,5 +1,6 @@
 # BlogKori Theme
-BlogKori is a fully responsive minimalist blogging WordPress theme for personal blogs, photography blogs or for business bloggers. If you are a writer, traveler, adventure, artist and you have a blog, then this is the perfect blog for you. BlogKori is a clean simple design with awesome typography. The theme has custom logo, header, custom background image which you can easily setup from the theme customizer option. It has Google Analytics tracking box. You can also change the default color scheme of this design to your liking. The theme also features drop down menus, right sidebar area, threaded comments option and sticky post. Add featured images to your blog posts and make your readers love your blog. This theme is built on bootstrap framework which is mobile responsive. It is a light theme with HTML5 standard markup which makes it SEO friendly.
+
+BlogKori is a simple minimalist blog theme. If you are new to blogging or just want a simple WordPress theme to showcase your writing, then use this theme. In this theme, the articles take the center stage. BlogKori theme is useful for content-rich blogs, review or affiliate niche sites. The site uses SEO optimized markup for faster speed and better search rankings.
 
 ## Developers note
 
@@ -8,20 +9,20 @@ Hey thanks for downloading this theme and actually opening and reading this "REA
 This is my first theme, so it does not have any extra features. As I learn more and more about WordPress theme development, I will make more themes with cool features. If you love my theme and use it on your site, please send me an email with your site address and I will be happy to check it out.
 
 Read my blog at https://blogkori.com
-email: tamalanwaronline[at]gmail[dot]com ~ tweet me @tamalweb
+email: tamal[at]blogkori[dot]com
 
 ## Theme Features
 
-* Simple minimalist design with good typography
-* Widgetized sidebar area
-* Custom menu area with drop down menus
-* Threaded/nested comments
-* Choose your own header logo from theme customizer
-* Choose your own site background color or image
-* Mobile and tablet ready responsive design
-* HTML5 clean code base for faster page load
-* New in 1.3.4: Theme options page and Google Analytics tracking code box
-* New in 1.3.6: Change the color scheme from the default blue to your choice
+- Simple minimalist design with good typography
+- Widgetized sidebar area
+- Custom menu area with drop down menus
+- Threaded/nested comments
+- Choose your own header logo from theme customizer
+- Choose your own site background color or image
+- Mobile and tablet ready responsive design
+- HTML5 clean code base for faster page load
+- New in 1.3.4: Theme options page and Google Analytics tracking code box
+- New in 1.3.6: Change the color scheme from the default blue to your choice
 
 ## Theme Limitations
 
@@ -32,11 +33,6 @@ It will show the website name in place of the logo. Will work on this in the fut
 the menu to show the drop down menu. So when setting up a menu
 please add just one level of drop down, thanks.
 
-## Theme Support
-
-**Limited support available via WordPress theme support page**
-Twitter @tamalweb or from my facebook: fb.com/tamalanwar
-
 ## Changelog
 
 1.2.13
@@ -45,7 +41,7 @@ Official WP release to the public
 1.2.14
 Fixed mobile hamburger menu not working
 
-1.3.1-1.3.4*
+1.3.1-1.3.4
 Theme options; Google Analytics option
 Minor changes and bug fixes
 
@@ -53,11 +49,14 @@ Minor changes and bug fixes
 ~~Added option for ad widgets~~
 Made some minor changes to the layout
 
-1.3.6*
+1.3.6
 Added option to change default color scheme and link colors from theme customizer menu.
 
-1.3.7
-Changed author links
+1.3.7-1.3.8
+Changed author links.
+
+1.3.9
+Fixed color preview bug. Minor changes to the theme options page.
 
 ## Theme License
 
@@ -73,12 +72,12 @@ of the License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
 This theme is built with the Twitter Bootstrap framework
 Bootstrap v3.3.2 (http://getbootstrap.com)

@@ -81,6 +81,11 @@ function theme_options_do_page() {
 
             <div class="row">
             <div style="" class="left">
+                <h3>Get Started with BlogKori Theme</h3>
+                <p>
+                <a href="https://blogkori.com/theme?utm_source=options_page&utm_medium=referral&utm_campaign=blogkori_theme" target="_blank">
+                Download the theme pack and getting started guide.</a></p>
+
                 <h3>Google Analytics</h3>
                 <p>Paste the Google Analytics or other tracking scripts here:</p>
 						<textarea id="blogkori_theme_options[googanalytics]" class="large-text" cols="50" rows="5" name="blogkori_theme_options[googanalytics]" onclick="this.focus();this.select()"><?php echo esc_textarea( $options['googanalytics'] ); ?></textarea>
@@ -93,15 +98,9 @@ function theme_options_do_page() {
             </div>
 
             <div style="" class="right">
-                <h3>Useful links</h3>
-                <p><a href="https://blogkoritheme.blogspot.com/p/documentation.html" target="_blank" rel="noopener noreferrer">Documentation</a> - <a href="https://wordpress.org/support/theme/blogkori" target="_blank" rel="noopener noreferrer">Support</a> - <a href="https://tamalweb.com/hire" target="_blank" style="color:#37a000;font-weight:bold;">Hire me!</a>
-
-                <p>Have a question? Let me know in a tweet..</p>
-                <a href="https://twitter.com/intent/tweet?screen_name=tamalanwar" class="twitter-mention-button" data-size="small" data-text="(blogkori theme)" data-related="tamalanwar" data-show-count="false">Tweet to @TamalAnwar</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 				<!-- <h3>Video Tutorial</h3>
                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/sM8pryoovTo?rel=0" frameborder="0" allowfullscreen></iframe> -->
-
 
 				<h3>Fresh from my Blog</h3>
 				<div style="padding: 20px;" class="postbox">
@@ -119,25 +118,6 @@ function theme_options_do_page() {
 					?>
 				<p style="text-align: right;"><a href="https://blogkori.com/theme?utm_source=options_page&utm_medium=referral&utm_campaign=blogkori_theme" target="_blank">BlogKori.com</a>  </p>
 				</div>
-                <h3>Latest Theme Updates</h3>
-                <div style="padding: 20px;" class="postbox">
-                <?php
-                        echo '<div class="rss-widget">';
-                     wp_widget_rss_output(array(
-                          'url' => 'https://github.com/TamalAnwar/blogkori/releases',
-                          'title' => 'BlogKori Theme Updates',
-                          'items' => 3,
-                          'show_summary' => 1,
-                          'show_author' => 0,
-                          'show_date' => 0
-                     ));
-                     echo '</div>';
-                    ?>
-                <p style="text-align: right;"><a href="https://github.com/TamalAnwar/blogkori/releases" target="_blank">BlogKori Theme Updates</a>  </p>
-                </div>
-
-
-
 				</p>
 
             </div>
